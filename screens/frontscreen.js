@@ -11,9 +11,9 @@ export default function FrontScreen({ navigation }) {
                 <Button
                     title="Login"
                     onPress={() => navigation.navigate('Login', { screen: 'Login' })}
-                    color='coral'
-                />
-
+                    color='coral' />
+            </View>
+            <View style={styles.button}>
                 <Button
                     title="Sign Up"
                     onPress={() => navigation.navigate('Signup', { screen: 'Signup' })}
@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
         color: '#333'
     },
     button: {
-        margin: 10,
-        padding: 20,
-        flexDirection: 'column',
-        flex: 1
+        margin: 5,
+        // padding: 20,
+        // flexDirection: 'column',
+        // flex: 1
     }
 })
